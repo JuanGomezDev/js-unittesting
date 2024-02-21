@@ -109,12 +109,38 @@ describe('checkTruthy function', () => {
 })
 
 describe('addLastName function', () => {
+  const {addLastName} = functions;
   it('should be return Pepito Perez when I sent Perez', () => {
     //ARRANGE
 
     //ACT
+    const res = addLastName("Perez");
 
     //ASSERT
+    expect(res).toEqual({"firstname": "Pepito", "lastname": "Perez"});
+  });
+  it('should return Pepito when I sent an empty string', () => {
+    //ARRANGE
+    
+    //ACT
+    const res = addLastName("");
+    
+    //ASSERT
+    expect(res).toEqual({"firstname": "Pepito", "lastname": ""});
+  });
+  it('should return an Object even if I sent any value', () => {
+    //ARRANGE
 
+    //ACT
+    const res1 = addLastName(false);
+    const res2 = addLastName(true);
+    const res3 = addLastName([]);
+    const res4 = addLastName("This is the last time");
+
+    //ASSERT
+    expect(typeof res1).toBe("object");
+    expect(typeof res2).toBe("object");
+    expect(typeof res3).toBe("object");
+    expect(typeof res4).toBe("object");
   });
 })

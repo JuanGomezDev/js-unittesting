@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708539645884" clover="3.2.0">
-  <project timestamp="1708539645884" name="All files">
-    <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2" elements="11" coveredelements="6" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+<coverage generated="1708541264232" clover="3.2.0">
+  <project timestamp="1708541264232" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="11" coveredelements="11" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
     <file name="functions.js" path="C:\Users\j.gomezayala\Documents\webui-developer\react-bootcamp\js-unittesting\functions.js">
-      <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="5" type="stmt"/>
       <line num="3" count="5" type="stmt"/>
-      <line num="4" count="0" type="stmt"/>
-      <line num="6" count="0" type="stmt"/>
-      <line num="7" count="0" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="6" count="6" type="stmt"/>
+      <line num="7" count="6" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
     </file>
   </project>
