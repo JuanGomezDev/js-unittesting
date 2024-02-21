@@ -2,7 +2,7 @@ const functions = require("./functions.js");
 
 describe('multiply function', () => {
   const {multiply} = functions;
-  
+
   it('should be return multiple when I sent two numbers', () => {
     //ARRANGE
     // const {multiply} = functions;
@@ -41,13 +41,37 @@ describe('multiply function', () => {
 
 
 describe('isNull function', () => {
+  const {isNull} = functions;
   it('should be return null', () => {
     //ARRANGE
 
     //ACT
+    const res = isNull();
 
     //ASSERT
+    expect(res).toBeNull();
+  });
+  it('should return null when I sent null', () => {
+    //ARRANGE
 
+    //ACT
+    const res = isNull(null);
+
+    //ASSERT
+    expect(res).toBeNull();
+  });
+  it('should return null when the input is a non-false value', () => {
+    //ARRANGE
+
+    //ACT
+    const res1 = isNull("Im not falsy bro");
+    const res2 = isNull(8);
+    const res3 = isNull(true);
+
+    //ASSERT
+    expect(res1).toBeNull();
+    expect(res2).toBeNull();
+    expect(res3).toBeNull();
   });
 });
 
