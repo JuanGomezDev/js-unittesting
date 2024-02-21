@@ -76,13 +76,35 @@ describe('isNull function', () => {
 });
 
 describe('checkTruthy function', () => {
+  const {checkTruthy} = functions;
   it('should be return true when I sent true', () => {
     //ARRANGE
 
     //ACT
+    const res = checkTruthy(true);
 
     //ASSERT
+    expect(res).toBeTruthy();
+  });
+  it('should return true if I sent the negation of false', () => {
+    //ARRANGE
 
+    //ACT
+    const res = checkTruthy(!false);
+
+    //ASSERT
+    expect(res).toBeTruthy();
+  });
+  it('should return false if I sent other truthy values', () => {
+    //ARRANGE
+
+    //ACT
+    const res1 = checkTruthy("Trust me, Im a true value");
+    const res2 = checkTruthy(23);
+
+    //ASSERT
+    expect(res1).toBeFalsy();
+    expect(res2).toBeFalsy();
   });
 })
 
